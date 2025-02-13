@@ -1,0 +1,60 @@
+/* 🌟 GitHub Repo Container */
+.github-container {
+  padding: 40px 20px;
+}
+
+/* 🌟 Card Styling */
+.repo-card {
+  background: linear-gradient(135deg, #1e1e2e, #0f0f0f);
+  color: white;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
+  margin-top: 30px;
+  padding: 30px;
+}
+
+.repo-card:hover {
+  transform: translateY(-5px);
+  border-color: #00d4ff;
+  box-shadow: 0px 4px 15px rgba(0, 212, 255, 0.5);
+}
+
+/* 🌟 Card Title */
+.repo-card .card-title {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #00d4ff;
+  display: flex;
+  align-items: center;
+}
+
+.repo-card .card-title .icon {
+  margin-right: 8px;
+  color: white;
+  font-size: 1.6rem;
+}
+
+/* 🌟 Description */
+.repo-card .card-text {
+  font-size: 1rem;
+  color: #ccc;
+}
+
+/* 🌟 Button Styling */
+.repo-card .btn-dark {
+  background: linear-gradient(45deg, #ff00ff, #00d4ff);
+  border: none;
+  padding: 8px 14px;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+  border-radius: 8px;
+  color: black;
+}
+
+.repo-card .btn-dark:hover {
+  background: linear-gradient(45deg, #00d4ff, #ff00ff);
+  transform: scale(1.05);
+}

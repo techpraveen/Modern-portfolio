@@ -1,0 +1,493 @@
+
+/* Footer Styling */
+.footer {
+  background-color: #000; /* Black background */
+  color: #fff; /* White text */
+  padding: 20px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  z-index: 1000; /* Ensure footer stays on top */
+}
+ 
+
+.footer p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.social-links {
+  display: flex;
+  gap: 15px; /* Space between icons */
+  margin-left: 50%;
+}
+
+.social-link {
+  color: #fff; /* White icons */
+  font-size: 1.2rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-link:hover {
+  color: #ccc; /* Light gray on hover */
+  transform: translateY(-3px); /* Lift icon on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .footer p {
+    font-size: 0.8rem;
+  }
+
+  .social-links {
+    gap: 10px;
+  }
+
+  .social-link {
+    font-size: 1rem;
+  }
+}
+/* 🌟 Navbar Styling */
+.navbar {
+  width: 80px; /* Sidebar width */
+  height: 100vh;
+  background: black; /* Dark theme */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  top: 0;
+  padding: 10px 0;
+  transition: width 0.3s ease-in-out;
+  box-shadow: 2px 0 10px rgba(255, 255, 255, 0.1);
+}
+
+/* 🌟 Navbar List */
+.navbar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* 🌟 Navbar Items */
+.navbar li {
+  margin: 20px 0;
+}
+
+/* 🌟 Navbar Icons */
+.navbar a {
+  color: white;
+  font-size: 24px;
+  padding: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+.navbar a:hover {
+  background: white;
+  color: black;
+  transform: scale(1.1);
+}
+
+/* 🌟 Responsive Navbar */
+@media (max-width: 768px) {
+  .navbar {
+      width: 60px;
+  }
+
+  .navbar a {
+      font-size: 20px;
+      padding: 10px;
+  }
+}
+
+/* 🌟 General Styling */
+body {
+  background: linear-gradient(135deg, #0f0f0f, #1e1e2e);
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  transition: background 0.3s ease-in-out;
+}
+/* 🌟 Home Container */
+.home-container {
+  padding: 40px 20px;
+}
+
+/* 🌟 Profile Card */
+.profile-card {
+  background: #1e1e1e;
+  color: white;
+  text-align: center;
+  border: 1px solid #444;
+  transition: transform 0.3s ease-in-out, border-color 0.3s ease-in-out;
+  box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.profile-card:hover {
+  transform: scale(1.05);
+  border-color: white;
+}
+
+/* 🌟 Profile Image */
+.profile-img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid white;
+}
+
+/* 🌟 Information Cards */
+.info-card {
+  background: #1e1e1e;
+  color: white;
+  border: 1px solid #444;
+  transition: transform 0.3s ease-in-out, border-color 0.3s ease-in-out;
+  box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.info-card:hover {
+  transform: scale(1.05);
+  border-color: white;
+}
+
+/* 🌟 Links inside Cards */
+.info-card a {
+  color: #00aaff;
+  text-decoration: none;
+}
+
+.info-card a:hover {
+  text-decoration: underline;
+}
+
+/* 🌟 Responsive Design */
+@media (max-width: 768px) {
+  .profile-pic {
+      width: 120px;
+      height: 120px;
+  }
+}
+
+/* 🌟 Content Styling */
+.content {
+  margin-left: 100px; /* Adjusted based on navbar width */
+  padding: 20px;
+  padding-bottom: 80px; /* Prevents content overlap with footer */
+}
+/* Home Container */
+.home-container {
+  padding-top: 20px;
+  padding-bottom: 80px; /* Ensure content doesn't overlap with the footer */
+}
+
+/* Profile Card */
+.profile-card {
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+ 
+
+.profile-pic {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Info Cards */
+.info-card {
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.info-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Text Styling */
+.text-center {
+  text-align: center;
+}
+
+/* Links */
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Animations */
+.animate__animated {
+  animation-duration: 1s;
+}
+
+.animate__fadeInDown {
+  animation-name: fadeInDown;
+}
+
+.animate__fadeIn {
+  animation-name: fadeIn;
+}
+
+.animate__fadeInLeft {
+  animation-name: fadeInLeft;
+}
+
+.animate__fadeInRight {
+  animation-name: fadeInRight;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+/* 🌟 About Page Styling */
+.about-container {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+/* 🌟 Profile Card */
+.profile-card {
+  background: linear-gradient(135deg, #1e1e2e, #0f0f0f);
+  color: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.profile-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 4px 15px rgba(0, 212, 255, 0.5);
+}
+
+/* 🌟 Profile Image */
+.profile-img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid white;
+}
+
+/* 🌟 Skills Badges */
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+.skills .badge {
+  font-size: 1rem;
+  padding: 10px 15px;
+}
+
+/* 🌟 Info Cards */
+.info-card {
+  background: #1e1e1e;
+  color: white;
+  border: 1px solid #444;
+  transition: transform 0.3s ease-in-out;
+  border-radius: 10px;
+  padding: 15px;
+  margin-top: 20px;
+}
+
+.info-card:hover {
+  transform: scale(1.05);
+  border-color: white;
+}
+ /* Spotify Liked Songs Container */
+.spotify-liked-songs {
+  padding: 20px;
+  margin-left: 250px; /* Adjust for the navbar width */
+  color: #fff; /* White text for better contrast */
+  margin-left: 0;
+}
+
+/* Tracks Container */
+.tracks-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid */
+  gap: 20px; /* Space between cards */
+  padding: 20px;
+  width: auto;
+}
+
+/* Track Card */
+.track-card {
+  background-color: #1e1e1e; /* Dark background for cards */
+  border-radius: 10px; /* Rounded corners */
+  overflow: hidden; /* Ensure content stays within the card */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+  margin-left: 0;
+}
+
+.track-card:hover {
+  transform: translateY(-5px); /* Lift card on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Increase shadow on hover */
+}
+
+/* Track Poster (Album Art) */
+.track-poster {
+  width: 100%; /* Full width of the card */
+  height: 200px; /* Fixed height for consistency */
+  object-fit: cover; /* Ensure the image covers the area */
+}
+
+/* Track Details */
+.track-details {
+  padding: 15px; /* Padding inside the card */
+}
+
+.track-details h3 {
+  margin: 0; /* Remove default margin */
+  font-size: 1.2rem; /* Larger font for song name */
+  color: #fff; /* White text */
+}
+
+.track-details p {
+  margin: 5px 0; /* Spacing between text */
+  font-size: 0.9rem; /* Smaller font for artist and album */
+  color: #b3b3b3; /* Light gray for secondary text */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .spotify-liked-songs {
+    margin-left: 0; /* Remove margin for smaller screens */
+    padding: 10px; /* Reduce padding */
+  }
+
+  .tracks-container {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Adjust grid for smaller screens */
+    gap: 10px; /* Reduce gap between cards */
+    padding: 10px; /* Reduce padding */
+  }
+
+  .track-poster {
+    height: 150px; /* Adjust height for smaller screens */
+  }
+
+  .track-details h3 {
+    font-size: 1rem; /* Smaller font for song name */
+  }
+
+  .track-details p {
+    font-size: 0.8rem; /* Smaller font for artist and album */
+  }
+}
+/* Playback Controls */
+.playback-controls {
+  position: fixed;
+  bottom: 0;
+  left: 250px; /* Adjust for the navbar width */
+  right: 0;
+  background-color: #1e1e1e;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.playback-controls button {
+  background-color: #333;
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.playback-controls button:hover {
+  background-color: #555;
+}

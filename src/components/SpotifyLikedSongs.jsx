@@ -27,7 +27,7 @@ const SpotifyLikedSongs = () => {
     } else {
       // Redirect to Spotify login page if token is missing or expired
       const clientId = '37c45348321f46c2ad122fc6c6881fe8';
-      const redirectUri = 'http://localhost:5173/callback';
+      const redirectUri = ' ';
       const scopes = ['user-library-read', 'user-read-playback-state', 'user-modify-playback-state'];
       const authUrl = `https://accounts.spotify.com/authorize?client_id=${clientId}&response_type=token&redirect_uri=${redirectUri}&scope=${scopes.join('%20')}`;
       window.location.href = authUrl;
